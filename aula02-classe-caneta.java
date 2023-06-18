@@ -24,28 +24,29 @@ public class Caneta {
     }
     
     void rabiscar() {
-        if (tampada == true) {
-            System.out.println("Não é possível rabiscar!");
+        if (this.tampada == true) {
+            System.out.println("Não é possível rabiscar. Pois" + this.modelo + " está tampada!");
         } else {
             System.out.println("Rabisco feito com SUCESSO!");
         }
     }
 
     void tampar() {
-        if (tampada == true) {
-            System.out.println("A caneta já está tampada!");
+        if (this.tampada == true) {
+            System.out.println("A caneta " + this.modelo + " já está tampada!");
         } else {
-            System.out.println("Caneta tampada com SUCESSO!");
+            System.out.println("Caneta " + this.modelo + " foi tampada com SUCESSO!");
         }
-        tampada = true;
+        this.tampada = true;
     }
 
     void destampar() {
-        if (tampada == false) {
-            System.out.println("A caneta já está destampada!");
+        if (this.tampada == false) {
+            System.out.println("A caneta " + this.modelo + " já está destampada!");
         } else {
-            System.out.println("Caneta destampada com SUCESSO!");
+            System.out.println("Caneta " + this.modelo + " foi destampada com SUCESSO!");
         }
+        this.tampada = false;
     }
 
 }
