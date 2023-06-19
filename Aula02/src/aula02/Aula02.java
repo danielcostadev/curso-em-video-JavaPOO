@@ -4,7 +4,7 @@ public class Aula02 {
 
 
     public static void main(String[] args) {
-        // TODO code application logic here
+    
         
         Caneta c01 = new Caneta();
         c01.modelo = "Bic";
