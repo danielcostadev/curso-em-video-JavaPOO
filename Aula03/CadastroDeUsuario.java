@@ -1,6 +1,6 @@
-package cadastrousuario;
+//package cadastrousuario;
 
-public class CadastroUsuario {
+public class CadastroDeUsuario {
 
     public static void main(String[] args) {
         

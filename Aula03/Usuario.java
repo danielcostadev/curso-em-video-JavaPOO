@@ -1,7 +1,7 @@
 // Código desenvolvido com o conhecimento adiquirido na Aula03 do Curso de JavaPOO
 // Curso em Vídeo - Professor Gustavo Guanabara
 
-package cadastrousuario;
+// package cadastrousuario;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class Usuario {
         this.usuario = teclado.nextLine();
         System.out.print("Digite uma senha para seu usuario: ");
         this.senha = teclado.nextLine();
-       
+      
         cadastrado = (!this.usuario.equals("")&&!this.senha.equals(""))?this.usuario+""
                 + " Cadastrado com sucesso!":"Por favor digite os dados corretamente!";
         
