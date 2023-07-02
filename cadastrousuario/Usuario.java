@@ -1,7 +1,6 @@
+package cadastrousuario;
 // Código desenvolvido com o conhecimento adiquirido na Aula03 do Curso de JavaPOO
 // Curso em Vídeo - Professor Gustavo Guanabara
-
-// package cadastrousuario;
 
 import java.util.Scanner;
 

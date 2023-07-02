@@ -1,4 +1,4 @@
-//package cadastrousuario;
+package cadastrousuario;
 
 public class CadastroDeUsuario {
 
