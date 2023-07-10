@@ -3,6 +3,8 @@ package aula07;
 public class Aula07 {
 
     public static void main(String[] args) {
+
+        //Para organizar o código foi criado um vetor "lut" com tamanho 6
         Lutador lut[] = new Lutador[6];
                 
         lut[0] = new Lutador("Xing Li","China",31,1.89f,68.9f,10,4,1);
@@ -12,7 +14,6 @@ public class Aula07 {
         lut[4] = new Lutador("Unico","Equador",37,1.80f,119.3f,5,4,3);
         lut[5] = new Lutador("Antonio","Brasil",30,1.75f,105.7f,12,2,4);
              
-        lut[4].setPeso(110f);
         lut[4].status();
      
     }
