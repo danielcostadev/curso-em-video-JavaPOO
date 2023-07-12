@@ -1,4 +1,4 @@
-package aula07;
+package aula08;
 
 public class Luta {
 
@@ -65,22 +65,24 @@ public class Luta {
             // Estrutura de decisão para verificar qual lutador venceu mais rounds e assim determinar o vencedor da partida
             if (lut1 != lut2) {
                 if (lut1 > lut2) {
-                    this.getDesafiante().setVitorias(this.getDesafiante().getVitorias() + 1);
+                    this.getDesafiante().ganharLuta();
+                    this.getDesafiado().perderLuta();
                     System.out.println("");
                     System.out.println("---------------------------------------");
                     System.out.println(this.getDesafiante().getNome() + " VENCEU A LUTA!");
                 } else {
-                    this.getDesafiado().setVitorias(this.getDesafiado().getVitorias() + 1);
+                    this.getDesafiado().ganharLuta();
+                    this.getDesafiante().perderLuta();
                     System.out.println("");
                     System.out.println("---------------------------------------");
                     System.out.println(this.getDesafiado().getNome() + " VENCEU A LUTA!");
                 }
             } else {
-                this.getDesafiante().setEmpates(this.getDesafiante().getEmpates() + 1);
-                this.getDesafiado().setEmpates(this.getDesafiado().getEmpates() + 1);
+                this.getDesafiante().empatarLuta();
+                this.getDesafiado().empatarLuta();
                 System.out.println("");
                 System.out.println("---------------------------------------");
-                System.out.println("A LUTA EMPATOU");
+                System.out.println("A LUTA TERMINOU EMPATADA!");
             }
 
             //DEBUG PARA VERIFICAR EFETIVIDADE DA ESTRUTURA DE DECISÃO

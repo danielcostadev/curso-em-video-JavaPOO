@@ -1,6 +1,6 @@
-package aula07;
+package aula08;
 
-public class Aula07 {
+public class Aula08 {
 
     public static void main(String[] args) {
         Lutador lut[] = new Lutador[6];

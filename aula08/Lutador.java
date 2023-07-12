@@ -1,4 +1,4 @@
-package aula07;
+package aula08;
 
 public class Lutador {
 
@@ -48,17 +48,17 @@ public class Lutador {
     }
 
     public void ganharLuta() {
-        System.out.println(this.getNome() + " GANHOU a luta!");
+        //System.out.println(this.getNome() + " GANHOU a luta!");
         this.setVitorias(this.getVitorias() + 1);
     }
 
     public void perderLuta() {
-        System.out.println(this.getNome() + " PERDEU a luta!");
+        //System.out.println(this.getNome() + " PERDEU a luta!");
         this.setDerrotas(this.getDerrotas() + 1);
     }
 
     public void empatarLuta() {
-        System.out.println(this.getNome() + " EMPATOU a luta!");
+        //System.out.println(this.getNome() + " EMPATOU a luta!");
         this.setEmpates(this.getEmpates() + 1);
     }
 
