@@ -3,27 +3,36 @@ package aula08;
 public class Luta {
 
     //Atributos
-    private Lutador desafiado;
     private Lutador desafiante;
+    private Lutador desafiado;
     private int rounds;
     private boolean aprovada;
 
     // Métodos
     public void apresentacao(String card) {
 
-        System.out.println("Senhoras e Senhores!");
-        System.out.println("Gostaríamos de apresentar os lutadores do " + card);
-        System.out.println("");
+        if (this.isAprovada()) {
+
+            System.out.println("Senhoras e Senhores!");
+            System.out.println("Gostaríamos de apresentar os lutadores do " + card);
+            System.out.println("");
+
+        } else {
+            System.out.println("Que triste! Não temos lutas para aprensetar hoje.");
+        }
 
     }
 
     public void marcarLuta(Lutador l1, Lutador l2) {
 
+        // define os lutadores Desafiante x Desafiado de acordo parâmetros
         this.setDesafiante(l1);
         this.setDesafiado(l2);
 
+        // Verifica se os lutadores pertencem a mesma caterogia e se são lutadores diferentes
         if (this.getDesafiante().getCategoria().equals(this.getDesafiado().getCategoria()) && (!this.getDesafiante().getNome().equals(this.getDesafiado().getNome()))) {
             this.setAprovada(true);
+
         } else {
             this.setAprovada(false);
             System.out.println("Não é possível marcar a luta, por favor verifique as informações inseridas");
@@ -42,7 +51,9 @@ public class Luta {
             System.out.println("E do outro lado...");
             this.getDesafiado().apresentar();
 
-            // Laço de repetição for para gerar os resultados dos rounds automáticamente
+            // Laço de repetição for para gerar os resultados dos rounds de forma aleatória
+            // No futuro podemos adicionar um peso de acordo com as caracteristicas do lutador
+            // E de acordo com aproveitamento
             for (this.setRounds(1); this.getRounds() <= 4; this.setRounds(this.getRounds() + 1)) {
                 int rand = 1 + (int) (Math.random() * 3);
                 switch (rand) {
@@ -58,7 +69,7 @@ public class Luta {
                         break;
                     default:
                         System.out.println("");
-                        System.out.println("O " + this.getRounds() + "º foi empate!");
+                        System.out.println("O " + this.getRounds() + "º round foi empate!");
                 }
             }
 
