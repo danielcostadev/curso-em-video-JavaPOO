@@ -38,7 +38,7 @@ public class Livro implements Publicacao{
         return titulo;
     }
     
-    public void setTitulo(){
+    public void setTitulo(String titulo){
         this.titulo = titulo;
     }
     
@@ -46,7 +46,7 @@ public class Livro implements Publicacao{
         return autor;
     }
     
-    public void setAutor(){
+    public void setAutor(String autor){
         this.autor = autor;
     }
     
@@ -54,7 +54,7 @@ public class Livro implements Publicacao{
         return totPaginas;
     }
     
-    public void setTotPaginas(){
+    public void setTotPaginas(int totPaginas){
         this.totPaginas = totPaginas;
     }
     
